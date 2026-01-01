@@ -22,11 +22,11 @@ const Hero: React.FC<HeroProps> = ({ onComparisonClick }) => {
         
         <h1 className="text-6xl md:text-[10rem] font-black mb-12 leading-[0.9] tracking-tighter">
           掌握贏面 <span className="gold-text">BC博球</span><br />
-          <span className="text-4xl md:text-7xl text-white/95 mt-4 block">誠信信用版·實力領航者</span>
+          <span className="text-4xl md:text-7xl text-white/95 mt-4 block">娛樂城信用版·實力領航者</span>
         </h1>
         
         <p className="text-xl md:text-3xl text-slate-400 max-w-4xl mx-auto mb-20 leading-relaxed font-light">
-          拒絕現金版儲值風險，我們主打「先審核照會月訂資料」，<br className="hidden md:block" />
+          拒絕現金版儲值風險，我們主打「先審核照會遊玩」，<br className="hidden md:block" />
           提供極速開版額度服務。免儲值上分，獲利周結對匯，您的資金安全我們守護。
         </p>
         
@@ -43,7 +43,7 @@ const Hero: React.FC<HeroProps> = ({ onComparisonClick }) => {
           {[
             { label: '核版速度', val: '10 分鐘' },
             { label: '結算時間', val: '周日 12:00' },
-            { label: '品牌資歷', val: '8 年誠信' },
+            { label: '品牌資歷', val: '15 年誠信' },
             { label: '審核機制', val: '安全照會' },
           ].map((item, i) => (
             <div key={i} className="glass-card p-6 rounded-3xl border border-white/5 shadow-xl">

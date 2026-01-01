@@ -1,9 +1,10 @@
+
 import React from 'react';
 
 const Process: React.FC = () => {
   const steps = [
     { title: '1. 提交申請', desc: '填寫資料，專人 10 分鐘內聯繫。', icon: '📝' },
-    { title: '2. 身分照會', desc: '審核月訂資料與身分，確保安全。', icon: '🛡️' },
+    { title: '2. 身分照會', desc: '審核遊玩資料與身分，確保安全。', icon: '🛡️' },
     { title: '3. 開版上分', desc: '設定信用額度，立即開始遊玩。', icon: '🎮' },
     { title: '4. 每周結算', desc: '每周日中午 12 點統計盈虧。', icon: '📊' },
     { title: '5. 周一對匯', desc: '周一進行匯款，資金流向透明。', icon: '💸' }

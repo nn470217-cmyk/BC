@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import Navbar from './components/Navbar';
@@ -15,7 +16,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const page = params.get('page') as PageType;
-    if (page && ['home', 'baccarat', 'slots', 'article', 'fishing', 'sports', 'seo-article', 'ares-strategy', 'thor-strategy'].includes(page)) {
+    if (page && ['home', 'baccarat', 'slots', 'ares-strategy', 'thor-strategy', 'seo-article'].includes(page)) {
       setCurrentPage(page);
     }
   }, []);
@@ -48,7 +49,7 @@ const App: React.FC = () => {
       <h3 className="text-2xl font-black gold-text mb-4">{title}</h3>
       <p className="text-slate-400 text-sm leading-relaxed mb-8">{desc}</p>
       <div className="inline-flex items-center text-xs font-black tracking-widest text-gold border-b border-gold/30 pb-1 group-hover:border-gold transition-all">
-        閱讀詳細攻略 <span className="ml-2">➜</span>
+        點擊進入深度教學 ➜
       </div>
     </div>
   );
@@ -64,29 +65,29 @@ const App: React.FC = () => {
             
             <section className="py-24 max-w-7xl mx-auto px-4">
               <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-6xl font-black mb-6">全台獨家 <span className="gold-text">必勝攻略庫</span></h2>
+                <h2 className="text-4xl md:text-6xl font-black mb-6">業界最全 <span className="gold-text">職業玩家攻略</span></h2>
                 <p className="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
-                  BC博球秉持誠信開版，不僅提供最高信用額度，更由職業玩家團隊整理深度打法，從新手入門到高階訊號識別，助您在開版後輕鬆掌握致富密碼。
+                  BC博球不僅是娛樂平台，更是玩家的技術後盾。我們結合了數千名資深玩家的實戰經驗，整理出全台最精準的百家樂與電子遊戲爆分邏輯，讓您在信用版開額度後，贏得更有把握。
                 </p>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                 <StrategyCard 
-                  title="百家樂大路詳解" 
-                  desc="不只是看顏色！深入解析五路財神路向、莊閒比例算牌法與資金1-3-2-4分配系統。"
+                  title="百家樂路單詳解" 
+                  desc="不只是看大路！深度解析三珠路、曱甴路連貫性，並教您如何在信用版制度下進行高效風險控制。"
                   icon="🃏" 
                   type="baccarat"
                   color="blue"
                 />
                 <StrategyCard 
                   title="戰神賽特爆分訊號" 
-                  desc="獨家解析「吃分、吐分、平穩」三大週期，捕捉賽特眼神閃爍與大倍率符號掉落預兆。"
+                  desc="掌握古埃及神明的財富碼！解析眼神閃爍與大倍率符號掉落的週期規律，識別機台吐分精華時段。"
                   icon="🏺" 
                   type="ares-strategy"
                   color="yellow"
                 />
                 <StrategyCard 
-                  title="雷神索爾補償機制" 
-                  desc="掌握掉落式消除的核心邏輯，解析倍率球疊加時機與免費遊戲購買的最佳熱度判斷。"
+                  title="雷神索爾技巧解析" 
+                  desc="獨家解析雷神槌擊的補償機制。掌握連續消除後的加注時機，最大化倍率球的疊加收益。"
                   icon="⚡" 
                   type="thor-strategy"
                   color="blue"
@@ -105,10 +106,9 @@ const App: React.FC = () => {
 
       <Footer setPage={handlePageChange} />
       
-      {/* 行動端快速導航 */}
       <div className="md:hidden fixed bottom-6 left-4 right-4 z-50">
         <a href="https://lin.ee/QmHsUTj" className="flex items-center justify-center gold-gradient text-black font-black py-5 rounded-2xl shadow-[0_15px_40px_rgba(212,175,55,0.4)] animate-bounce-slow text-lg">
-           <span className="mr-2">💬</span> 聯繫專員開版 (10分鐘快速核額)
+           💬 聯繫開版專員 (10分鐘快速照會)
         </a>
       </div>
     </div>
