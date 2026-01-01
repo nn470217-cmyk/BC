@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 interface HeroProps {
@@ -26,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({ onComparisonClick }) => {
         </h1>
         
         <p className="text-xl md:text-3xl text-slate-400 max-w-4xl mx-auto mb-20 leading-relaxed font-light">
-          拒絕現金版儲值風險，我們主打「先審核照會遊玩」，<br className="hidden md:block" />
+          拒絕現金版儲值風險，我們主打「審核照會後遊玩」，<br className="hidden md:block" />
           提供極速開版額度服務。免儲值上分，獲利周結對匯，您的資金安全我們守護。
         </p>
         
@@ -43,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ onComparisonClick }) => {
           {[
             { label: '核版速度', val: '10 分鐘' },
             { label: '結算時間', val: '周日 12:00' },
-            { label: '品牌資歷', val: '15 年誠信' },
+            { label: '品牌資歷', val: '10 年誠信' },
             { label: '審核機制', val: '安全照會' },
           ].map((item, i) => (
             <div key={i} className="glass-card p-6 rounded-3xl border border-white/5 shadow-xl">

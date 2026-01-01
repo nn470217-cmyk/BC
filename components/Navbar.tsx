@@ -9,20 +9,24 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ setPage, currentPage, onSectionNav }) => {
   const brandUrl = "https://www.bc78999.net";
-  // 使用用戶提供的最新 Logo PNG 路徑
-  const logoUrl = "https://img.js.design/assets/static/f50b865529f7f45c92849e75122789e5.png";
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-[100] bg-[#040712]/90 backdrop-blur-2xl border-b border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center cursor-pointer" onClick={() => setPage('home')}>
-            <img 
-              src={logoUrl} 
-              alt="BC博球" 
-              className="h-10 md:h-14 w-auto object-contain hover:scale-105 transition-transform" 
-              style={{ filter: 'drop-shadow(0 0 8px rgba(212, 175, 55, 0.2))' }}
-            />
+          {/* 採用文字與 CSS 結合的 Logo 設計，確保穩定性與品牌質感 */}
+          <div className="flex items-center cursor-pointer space-x-3 group" onClick={() => setPage('home')}>
+            <div className="w-10 h-10 bg-gold rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-300">
+              <span className="text-black font-black text-xl italic">BC</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-2xl md:text-3xl font-black gold-text italic tracking-tighter leading-none">
+                博球
+              </span>
+              <span className="text-[10px] text-slate-400 font-bold tracking-[0.2em] mt-1">
+                娛樂城信用版
+              </span>
+            </div>
           </div>
           
           <div className="hidden md:flex items-center space-x-12">
