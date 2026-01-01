@@ -50,7 +50,7 @@ const Navbar: React.FC<NavbarProps> = ({ setPage, currentPage, onSectionNav }) =
             <button onClick={() => onSectionNav('process')} className="text-sm font-black tracking-widest text-slate-400 hover:text-gold transition-colors">開版流程</button>
             
             <a href={brandUrl} className="gold-gradient text-black px-10 py-3 rounded-full font-black text-sm hover:scale-105 transition-all shadow-xl shadow-gold/20">
-              登入遊戲大廳
+              前往官網
             </a>
           </div>
           

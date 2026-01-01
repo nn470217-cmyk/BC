@@ -3,7 +3,6 @@ import { PageType } from '../types';
 
 interface GameDetailsProps { type: PageType; }
 
-// Fix: Corrected the malformed JSX tag on line 57. The unclosed className string and missing closing bracket for the opening <p> tag caused a syntax error, leading the TypeScript compiler to infer the component's return type as 'void' and failing to recognize the default export.
 const GameDetails: React.FC<GameDetailsProps> = ({ type }) => {
   const brandUrl = "https://www.bc78999.net";
   const lineUrl = "https://lin.ee/QmHsUTj";
@@ -67,7 +66,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type }) => {
                   </div>
                   <div>
                     <h3 className="text-gold font-bold mb-3 text-xl">三珠路與尋龍術</h3>
-                    <p className="mb-4 leading-relaxed text-slate-400">導致的預測點。配合我們專業玩家建議的「見紅打藍」或「見藍打紅」反向策略，能大幅提高在穩定牌局中的勝率。</p>
+                    <p className="mb-4 leading-relaxed text-slate-400">三珠路能有效預測「拍拍連」與「單跳」的轉折點。配合我們專業玩家建議的「見紅打藍」或「見藍打紅」反向策略，能大幅提高在穩定牌局中的勝率。</p>
                   </div>
                 </div>
               </section>
@@ -77,7 +76,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type }) => {
                   <span className="w-12 h-12 bg-gold text-black rounded-2xl flex items-center justify-center mr-5 text-xl">02</span>
                   資金管理：針對信用版的 1-3-2-4 必勝法
                 </h2>
-                <p className="leading-relaxed text-lg mb-6 text-slate-400">信用版的核心在於「信用額度」的靈活運用。1-3-2-4 策略能確保您在四局勝負中，即便第四局失敗也能保有獲利。在周日結算日前，維持穩定的營收比率是資深老手的共同選擇。</p>
+                <p className="leading-relaxed text-lg mb-6 text-slate-400">信用版的核心於「信用額度」的靈活運用。1-3-2-4 策略能確保您在四局勝負中，即便第四局失敗也能保有獲利。在周日結算日前，維持穩定的營收比率是資深老手的共同選擇。</p>
               </section>
 
               <section className="glass-card p-10 rounded-[40px] border border-white/10 shadow-2xl">
@@ -165,7 +164,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type }) => {
               立即開版
             </a>
             <a href={brandUrl} className="bg-white/5 text-white font-bold px-16 py-6 rounded-3xl hover:bg-white/10 transition-all border border-white/10 text-xl">
-              返回遊戲大廳
+              前往官網
             </a>
           </div>
         </div>
