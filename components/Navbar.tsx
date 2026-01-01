@@ -39,6 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({ setPage, currentPage, onSectionNav }) =
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                 <div className="bg-[#0a0f1e] border border-white/10 p-2 rounded-2xl w-56 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
                   <button onClick={() => setPage('baccarat')} className="w-full text-left px-5 py-4 text-sm font-bold text-slate-400 hover:text-gold hover:bg-white/5 rounded-xl transition-all">百家樂大路解析</button>
+                  <button onClick={() => setPage('sports')} className="w-full text-left px-5 py-4 text-sm font-bold text-slate-400 hover:text-gold hover:bg-white/5 rounded-xl transition-all">體育賽事分析</button>
                   <button onClick={() => setPage('ares-strategy')} className="w-full text-left px-5 py-4 text-sm font-bold text-slate-400 hover:text-gold hover:bg-white/5 rounded-xl transition-all">戰神賽特打法</button>
                   <button onClick={() => setPage('thor-strategy')} className="w-full text-left px-5 py-4 text-sm font-bold text-slate-400 hover:text-gold hover:bg-white/5 rounded-xl transition-all">雷神索爾技巧</button>
                 </div>

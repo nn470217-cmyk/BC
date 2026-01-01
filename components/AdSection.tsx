@@ -15,7 +15,7 @@ const AdSection: React.FC = () => {
             現在申請開版，通過照會後立即領取 <span className="text-yellow-500 font-bold">5000 體驗金</span>。免儲值，贏錢可提領！
           </p>
           <a href={brandUrl} className="inline-block gold-gradient text-black font-black px-10 py-4 rounded-xl hover:scale-105 transition-transform shadow-lg">
-            立即聯絡開版
+            立即開版
           </a>
         </div>
       </div>

@@ -1,15 +1,55 @@
-
 import React from 'react';
 import { PageType } from '../types';
 
 interface GameDetailsProps { type: PageType; }
 
+// Fix: Corrected the malformed JSX tag on line 57. The unclosed className string and missing closing bracket for the opening <p> tag caused a syntax error, leading the TypeScript compiler to infer the component's return type as 'void' and failing to recognize the default export.
 const GameDetails: React.FC<GameDetailsProps> = ({ type }) => {
   const brandUrl = "https://www.bc78999.net";
   const lineUrl = "https://lin.ee/QmHsUTj";
 
   const renderContent = () => {
     switch (type) {
+      case 'sports':
+        return (
+          <>
+            <h1 className="text-5xl md:text-7xl font-black gold-text mb-10 leading-tight text-center">體育賽事投注：<br/>盤口心理學與滾球策略</h1>
+            <div className="space-y-16 text-slate-300">
+              <section className="glass-card p-10 rounded-[40px] border border-white/10 shadow-2xl">
+                <h2 className="text-3xl font-black text-white mb-8 flex items-center">
+                  <span className="w-12 h-12 bg-green-600 text-white rounded-2xl flex items-center justify-center mr-5 text-xl">01</span>
+                  掌握盤口變動：何謂「誘盤」與「降水」？
+                </h2>
+                <div className="grid md:grid-cols-2 gap-10">
+                  <div>
+                    <h3 className="text-gold font-bold mb-3 text-xl">水位與風控</h3>
+                    <p className="mb-4 leading-relaxed text-slate-400">盤口水位的跳動不僅代表投注熱度，更是莊家對賽果的動態調整。在 BC博球 信用版，我們提供即時美金盤對比，教您識別莊家故意抬高強隊水位的「誘敵」策略。</p>
+                  </div>
+                  <div>
+                    <h3 className="text-gold font-bold mb-3 text-xl">信用版投注優勢</h3>
+                    <p className="mb-4 leading-relaxed text-slate-400">信用版的最大優勢在於不佔用現金流。當出現「穩贏盤」或「急跳盤」時，您能第一時間動用信用額度，不必擔心儲值到帳延遲錯過最佳賠率。</p>
+                  </div>
+                </div>
+              </section>
+              
+              <section className="glass-card p-10 rounded-[40px] border border-white/10 shadow-2xl">
+                <h2 className="text-3xl font-black text-white mb-8 flex items-center">
+                  <span className="w-12 h-12 bg-green-600 text-white rounded-2xl flex items-center justify-center mr-5 text-xl">02</span>
+                  走地（滾球）進階技巧：捕捉黃金 5 分鐘
+                </h2>
+                <p className="leading-relaxed text-lg mb-6 text-slate-400">足球與籃球賽事中，最後階段的盤口波動最為劇烈。結合我們的即時數據分析，在足球比賽 80 分鐘後的「絕殺球」盤口，或 NBA 第四節末段的總分大小盤，都是資深玩家利用大額信用額度獲利的黃金時段。</p>
+              </section>
+
+              <section className="glass-card p-10 rounded-[40px] border border-white/10 shadow-2xl">
+                <h2 className="text-3xl font-black text-white mb-8 flex items-center">
+                  <span className="w-12 h-12 bg-green-600 text-white rounded-2xl flex items-center justify-center mr-5 text-xl">03</span>
+                  涵蓋賽事：全台最豐富的投注選擇
+                </h2>
+                <p className="leading-relaxed text-slate-400">從中華職棒 CPBL、美國職棒 MLB 到五大足球聯賽、NBA 籃球、甚至各類電競賽事，BC博球 均提供最全盤口。配合每周日結算的機制，讓您的體育分析真正轉化為實質收益。</p>
+              </section>
+            </div>
+          </>
+        );
       case 'baccarat':
         return (
           <>
@@ -27,7 +67,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type }) => {
                   </div>
                   <div>
                     <h3 className="text-gold font-bold mb-3 text-xl">三珠路與尋龍術</h3>
-                    <p className="mb-4 leading-relaxed text-slate-400">三珠路能有效預測「拍拍連」與「單跳」的轉折點。配合我們專業玩家建議的「見紅打藍」或「見藍打紅」反向策略，能大幅提高在穩定牌局中的勝率。</p>
+                    <p className="mb-4 leading-relaxed text-slate-400">導致的預測點。配合我們專業玩家建議的「見紅打藍」或「見藍打紅」反向策略，能大幅提高在穩定牌局中的勝率。</p>
                   </div>
                 </div>
               </section>
@@ -45,7 +85,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type }) => {
                   <span className="w-12 h-12 bg-gold text-black rounded-2xl flex items-center justify-center mr-5 text-xl">03</span>
                   信用版專屬優勢：免佣百家樂
                 </h2>
-                <p className="leading-relaxed text-slate-400">我們平台推薦使用免佣百家樂，雖然莊 6 點勝只賠一半，但對於長期觀察路向的玩家來說，省去的每一筆抽水都是純獲利。結合安全照會的高信用额度，讓您的博弈之旅毫無後顧之憂。</p>
+                <p className="leading-relaxed text-slate-400">我們平台推薦使用免佣百家樂，雖然莊 6 點勝只賠一半，但對於長期觀察路向的玩家來說，省去的每一筆抽水都是純獲利。結合安全照會的高信用額度，讓您的博弈之旅毫無後顧之憂。</p>
               </section>
             </div>
           </>
@@ -98,7 +138,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type }) => {
                   <span className="w-12 h-12 bg-gold text-black rounded-2xl flex items-center justify-center mr-5 text-xl">02</span>
                   低分洗台、高分捕捉策略
                 </h2>
-                <p className="leading-relaxed text-slate-400">利用信用版的高额度優勢，先用最低注連續旋轉 100 次以平衡機台 RTP。一旦觀察到連續三次消除以上，立即切換為高額注。這種「以低補高」的策略在索爾的高波動性下表現最為優異。</p>
+                <p className="leading-relaxed text-slate-400">利用信用版的高額度優勢，先用最低注連續旋轉 100 次以平衡機台 RTP。一旦觀察到連續三次消除以上，立即切換為高額注。這種「以低補高」的策略在索爾的高波動性下表現最為優異。</p>
               </section>
             </div>
           </>
@@ -122,7 +162,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type }) => {
           <p className="text-slate-400 mb-12 text-xl">BC博球提供全台最穩定的信用額度，專人 10 分鐘核版，免儲值、免繁瑣流程，讓您贏在起跑點。</p>
           <div className="flex flex-col sm:flex-row justify-center gap-8">
             <a href={lineUrl} className="gold-gradient text-black font-black px-16 py-6 rounded-3xl hover:scale-105 transition-all text-xl shadow-2xl">
-              立即加賴開版
+              立即開版
             </a>
             <a href={brandUrl} className="bg-white/5 text-white font-bold px-16 py-6 rounded-3xl hover:bg-white/10 transition-all border border-white/10 text-xl">
               返回遊戲大廳

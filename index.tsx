@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Comparison from './components/Comparison';
@@ -16,7 +15,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const page = params.get('page') as PageType;
-    if (page && ['home', 'baccarat', 'slots', 'ares-strategy', 'thor-strategy', 'seo-article'].includes(page)) {
+    if (page && ['home', 'baccarat', 'slots', 'ares-strategy', 'thor-strategy', 'sports', 'seo-article'].includes(page)) {
       setCurrentPage(page);
     }
   }, []);
@@ -44,7 +43,7 @@ const App: React.FC = () => {
       onClick={() => handlePageChange(type)}
       className="glass-card group relative p-8 rounded-[40px] border border-white/5 hover:border-gold/40 transition-all duration-500 cursor-pointer overflow-hidden shadow-2xl"
     >
-      <div className={`absolute -top-12 -right-12 w-40 h-40 bg-${color}/10 rounded-full blur-3xl group-hover:bg-${color}/20 transition-all`}></div>
+      <div className={`absolute -top-12 -right-12 w-40 h-40 bg-${color}-500/10 rounded-full blur-3xl group-hover:bg-${color}-500/20 transition-all`}></div>
       <div className="text-7xl mb-6 transform group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500">{icon}</div>
       <h3 className="text-2xl font-black gold-text mb-4">{title}</h3>
       <p className="text-slate-400 text-sm leading-relaxed mb-8">{desc}</p>
@@ -67,16 +66,23 @@ const App: React.FC = () => {
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-6xl font-black mb-6">業界最全 <span className="gold-text">職業玩家攻略</span></h2>
                 <p className="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
-                  BC博球不僅是娛樂平台，更是玩家的技術後盾。我們結合了數千名資深玩家的實戰經驗，整理出全台最精準的百家樂與電子遊戲爆分邏輯，讓您在信用版開額度後，贏得更有把握。
+                  BC博球不僅是娛樂平台，更是玩家的技術後盾。我們結合了數千名資深玩家的實戰經驗，整理出全台最精準的投注邏輯，讓您在信用版開額度後，贏得更有把握。
                 </p>
               </div>
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <StrategyCard 
                   title="百家樂路單詳解" 
                   desc="不只是看大路！深度解析三珠路、曱甴路連貫性，並教您如何在信用版制度下進行高效風險控制。"
                   icon="🃏" 
                   type="baccarat"
                   color="blue"
+                />
+                <StrategyCard 
+                  title="體育盤口與走地" 
+                  desc="掌握水位變動與盤口陷阱。提供美職、中職、NBA 實戰分析，靈活運用信用額度捕捉滾球時機。"
+                  icon="⚽" 
+                  type="sports"
+                  color="green"
                 />
                 <StrategyCard 
                   title="戰神賽特爆分訊號" 
@@ -108,7 +114,7 @@ const App: React.FC = () => {
       
       <div className="md:hidden fixed bottom-6 left-4 right-4 z-50">
         <a href="https://lin.ee/QmHsUTj" className="flex items-center justify-center gold-gradient text-black font-black py-5 rounded-2xl shadow-[0_15px_40px_rgba(212,175,55,0.4)] animate-bounce-slow text-lg">
-           💬 聯繫開版專員 (10分鐘快速照會)
+           💬 立即開版 (10分鐘快速照會)
         </a>
       </div>
     </div>
@@ -117,6 +123,5 @@ const App: React.FC = () => {
 
 const rootElement = document.getElementById('root');
 if (rootElement) {
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(<App />);
+  createRoot(rootElement).render(<App />);
 }
