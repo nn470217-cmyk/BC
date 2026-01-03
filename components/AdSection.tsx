@@ -15,7 +15,7 @@ const AdSection: React.FC = () => {
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="text-center md:text-left flex-1">
               <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-red-500 text-xs font-black tracking-widest mb-6 animate-pulse">
-                LIMITED OFFER 期間限定
+                期間限定專屬禮遇
               </div>
               <h3 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight">
                 BC博球 <span className="gold-text">尊爵開版禮</span>

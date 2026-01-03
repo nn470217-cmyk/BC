@@ -18,7 +18,7 @@ const Process: React.FC = () => {
     { 
       title: '額度上分', 
       desc: '根據照會結果核發信用額度。無需儲值即可立即在各大場館開始您的獲利之旅。', 
-      icon: '🎮',
+      icon: '玩',
       tag: 'Step 03'
     },
     { 
@@ -45,9 +45,9 @@ const Process: React.FC = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-24">
           <div className="inline-block px-4 py-1 rounded-full bg-gold/10 border border-gold/20 mb-4">
-            <span className="text-gold font-black tracking-[0.3em] text-[10px] uppercase">Service Workflow</span>
+            <span className="text-gold font-black tracking-widest text-[10px] uppercase">專業開版服務流程</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-black mb-6 italic">快速開版 <span className="gold-text">五大環節</span></h2>
+          <h2 className="text-4xl md:text-6xl font-black mb-6 italic pr-4">快速開版 <span className="gold-text">五大環節</span></h2>
           <p className="text-slate-500 max-w-xl mx-auto text-sm md:text-lg">我們簡化了繁瑣的行政流程，讓您的信用版體驗從開版到兌現都極度流暢。</p>
         </div>
 
@@ -95,7 +95,7 @@ const Process: React.FC = () => {
         {/* 底部導引按鈕 */}
         <div className="mt-20 text-center">
           <a href="https://lin.ee/QmHsUTj" className="inline-flex items-center space-x-4 bg-[#0a0f1e] border border-white/10 px-10 py-5 rounded-full text-slate-300 hover:text-gold hover:border-gold transition-all group font-black">
-            <span className="text-lg">點擊聯繫專員諮詢審核標準</span>
+            <span className="text-lg">點擊聯繫專員諮詢開版額度</span>
             <span className="bg-gold text-black w-8 h-8 rounded-full flex items-center justify-center group-hover:translate-x-2 transition-transform italic">➜</span>
           </a>
         </div>

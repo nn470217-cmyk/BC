@@ -21,13 +21,13 @@ const Hero: React.FC<HeroProps> = ({ onComparisonClick }) => {
             <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-gold opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-gold"></span>
           </span>
-          <span className="text-gold text-[10px] md:text-sm font-black tracking-[0.3em] uppercase">2026 專業玩家信用開版推薦首選</span>
+          <span className="text-gold text-[10px] md:text-sm font-black tracking-widest">2026 專業玩家信用開版推薦首選</span>
         </div>
         
-        <h1 className="text-[2.8rem] md:text-[8.5rem] font-black mb-10 leading-[1] md:leading-[0.85] tracking-tighter">
-          <span className="block mb-2 md:inline md:mb-0 drop-shadow-2xl">全台最強</span>
-          <span className="gold-text block md:inline drop-shadow-[0_10px_30px_rgba(212,175,55,0.3)]">娛樂城推薦</span><br />
-          <span className="text-2xl md:text-7xl text-white/80 mt-8 block italic font-serif tracking-normal">BC博球 · 信用版領航者</span>
+        <h1 className="text-[2.8rem] md:text-[6.5rem] lg:text-[8.5rem] font-black mb-10 leading-[1.2] md:leading-[1.0] tracking-tighter">
+          <span className="block drop-shadow-2xl">全台最強</span>
+          <span className="gold-text block pb-2 md:pb-4 drop-shadow-[0_10px_30px_rgba(212,175,55,0.3)]">娛樂城推薦</span>
+          <span className="text-2xl md:text-7xl text-white/80 mt-12 md:mt-16 block italic font-serif tracking-normal">BC博球 · 信用版領航者</span>
         </h1>
         
         <p className="text-lg md:text-2xl text-slate-400 max-w-3xl mx-auto mb-16 leading-relaxed font-medium px-4">
@@ -37,14 +37,13 @@ const Hero: React.FC<HeroProps> = ({ onComparisonClick }) => {
         
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6 px-4">
           <a href={lineUrl} className="w-full sm:w-auto gold-gradient text-black font-black text-xl md:text-2xl px-12 py-6 md:px-20 md:py-7 rounded-[2rem] shadow-[0_20px_50px_rgba(212,175,55,0.4)] hover:scale-105 active:scale-95 transition-all duration-300">
-            10分鐘快速核額度
+            10分鐘快速核額遊玩
           </a>
           <button onClick={onComparisonClick} className="w-full sm:w-auto bg-white/5 backdrop-blur-3xl hover:bg-white/10 text-white font-black text-xl md:text-2xl px-12 py-6 md:px-20 md:py-7 rounded-[2rem] border border-white/10 transition-all shadow-xl">
             信用版優勢分析
           </button>
         </div>
         
-        {/* 指標數據 - 已經過中文化 */}
         <div className="mt-24 md:mt-36 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-6xl mx-auto px-4">
           {[
             { label: '核版速度', val: '10 分鐘', icon: '⚡' },
