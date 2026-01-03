@@ -21,7 +21,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
           </div>
         </div>
         <div className="lg:w-3/5 p-8 md:p-14">
-          <h3 className="text-3xl md:text-4xl font-black text-white mb-4 italic group-hover:text-gold transition-colors">{name}</h3>
+          <h3 className="text-3xl md:text-4xl font-black text-white mb-4 group-hover:text-gold transition-colors">{name}</h3>
           <div className="flex flex-wrap gap-3 mb-8">
             {features.map((f, i) => (
               <span key={i} className="text-[10px] font-black text-gold bg-gold/5 border border-gold/10 px-4 py-1.5 rounded-xl uppercase tracking-widest"># {f}</span>
@@ -44,7 +44,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
         return (
           <div className="space-y-16">
             <div className="text-center mb-20">
-              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 italic tracking-tighter pr-4">體育品牌 <span className="text-white">深度詳解</span></h1>
+              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 tracking-tighter pr-4">體育品牌 <span className="text-white">深度詳解</span></h1>
               <p className="text-slate-400 text-lg md:text-2xl max-w-4xl mx-auto font-medium leading-relaxed">BC博球介接亞洲最穩定、賠率最高的體育博彩系統，為專業運動博客提供最極致的投注環境。</p>
             </div>
             <BrandItem 
@@ -59,7 +59,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
         return (
           <div className="space-y-16">
             <div className="text-center mb-20">
-              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 italic tracking-tighter pr-4">電子遊戲 <span className="text-white">爆分館別</span></h1>
+              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 tracking-tighter pr-4">電子遊戲 <span className="text-white">爆分館別</span></h1>
               <p className="text-slate-400 text-lg md:text-2xl max-w-4xl mx-auto font-medium leading-relaxed">彙整全球最受歡迎的電子機台品牌，從戰神賽特到麻將發了，應有盡有。</p>
             </div>
             <BrandItem 
@@ -78,7 +78,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
               name="3. QT 電子"
               imageUrl="https://images.unsplash.com/photo-1518131394553-c24620027170?auto=format&fit=crop&q=80&w=1200"
               features={['亞系風格', '多樣機台', '極速載入']}
-              content={`QT 電子（Quality Tech）專注於亞洲市場偏好，其介面設計直覺流暢。提供超過百款不同主題的拉霸遊戲，特別是在小注博大獎的數值平衡上表現優異。`}
+              content={`QT 電子（QTech Games）專注於亞洲市場偏好，其介面設計直覺流暢。提供超過百款不同主題的拉霸遊戲，特別是在小注博大獎的數值平衡上表現優異。`}
             />
             <BrandItem 
               name="4. GR 電子"
@@ -90,7 +90,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
               name="5. ZG 電子"
               imageUrl="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=1200"
               features={['Ze-Gaming', '創新玩法', '高動態特效']}
-              content={`ZG 電子（Ze-Gaming）是新一代電子遊戲的領航品牌。其特色在於將傳統老虎機與現代動作遊戲特效結合，每一轉都充滿震撼感。`}
+              content={`ZG 電子（ZebraGaming）是新一代電子遊戲的領航品牌。其特色在於將傳統老虎機與現代動作遊戲特效結合，每一轉都充滿震撼感。`}
             />
           </div>
         );
@@ -98,7 +98,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
         return (
           <div className="space-y-16">
             <div className="text-center mb-20">
-              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 italic tracking-tighter pr-4">真人百家 <span className="text-white">頂級視訊</span></h1>
+              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 tracking-tighter pr-4">真人百家 <span className="text-white">頂級視訊</span></h1>
               <p className="text-slate-400 text-lg md:text-2xl max-w-4xl mx-auto font-medium leading-relaxed">嚴選全球具備合法牌照的頂級場館，為您提供最真實、最公正的真人視訊體驗。</p>
             </div>
             <BrandItem 
@@ -116,7 +116,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
             <BrandItem 
               name="3. MT 真人"
               imageUrl="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?auto=format&fit=crop&q=80&w=1200"
-              features={['Matrix Gaming', '視覺極致', 'VIP尊榮']}
+              features={['MT 真人', '視覺極致', 'VIP尊榮']}
               content={`MT 真人以奢華的場景佈置與高品質的荷官團隊聞名。致力於提供如拉斯維加斯 VIP 室般的隱私與專業服務。`}
             />
             <BrandItem 
@@ -143,7 +143,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
         return (
           <div className="space-y-16">
             <div className="text-center mb-20">
-              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 italic tracking-tighter pr-4">彩票品牌 <span className="text-white">公正開獎</span></h1>
+              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 tracking-tighter pr-4">彩票品牌 <span className="text-white">公正開獎</span></h1>
               <p className="text-slate-400 text-lg md:text-2xl max-w-4xl mx-auto font-medium leading-relaxed">同步官方開獎數據，極速派彩，賠率優勢全台最高。</p>
             </div>
             <BrandItem 
@@ -156,7 +156,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
               name="2. 大力彩票"
               imageUrl="https://i.ibb.co/rf3SCXmf/MSI.png"
               features={['高頻開獎', '極速結算', '數據分析']}
-              content={`大力彩票專攻 飆速賽車、幸運飛艇 等高頻開獎遊戲。提供詳盡的走勢圖表，方便玩家進行殺號與倍投計畫。`}
+              content={`大立彩票專攻 飆速賽車、幸運飛艇 等高頻開獎遊戲。提供詳盡的走勢圖表，方便玩家進行殺號與倍投計畫。`}
             />
           </div>
         );
@@ -164,7 +164,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
         return (
           <div className="space-y-16">
             <div className="text-center mb-20">
-              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 italic tracking-tighter pr-4">棋牌遊戲 <span className="text-white">智力對戰</span></h1>
+              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 tracking-tighter pr-4">棋牌遊戲 <span className="text-white">智力對戰</span></h1>
               <p className="text-slate-400 text-lg md:text-2xl max-w-4xl mx-auto font-medium leading-relaxed">擺脫枯燥單機，與全台玩家實時競技，體驗博弈中的博弈。</p>
             </div>
             <BrandItem 
@@ -179,7 +179,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
         return (
           <div className="space-y-16">
             <div className="text-center mb-20">
-              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 italic tracking-tighter pr-4">捕魚機 <span className="text-white">震撼特效</span></h1>
+              <h1 className="text-5xl md:text-8xl font-black gold-text mb-8 tracking-tighter pr-4">捕魚機 <span className="text-white">震撼特效</span></h1>
               <p className="text-slate-400 text-lg md:text-2xl max-w-4xl mx-auto font-medium leading-relaxed">集結全球最具爽快感的捕魚品牌，讓您在絢爛特效中獵殺金幣大獎。</p>
             </div>
             <div className="grid md:grid-cols-2 gap-10">
@@ -205,15 +205,15 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
       case 'sports':
         return (
           <div className="space-y-16">
-            <h1 className="text-5xl md:text-7xl font-black gold-text mb-10 leading-tight text-center italic pr-4">體育賽事攻略：<br/>盤口心理學與滾球策略</h1>
+            <h1 className="text-5xl md:text-7xl font-black gold-text mb-10 leading-tight text-center pr-4">體育賽事攻略：<br/>盤口心理學與滾球策略</h1>
             <div className="grid md:grid-cols-2 gap-10">
               <section className="glass-card p-12 rounded-[40px] border border-white/10 shadow-2xl">
-                <h2 className="text-3xl font-black text-white mb-8 italic">如何判斷莊家誘盤？</h2>
-                <p className="text-slate-400 leading-relaxed text-lg font-medium">觀察賽前 30 分鐘的水位跳動。若強隊水位持續高升但初盤水位卻極低，通常是莊家在誘導資金流向弱隊受讓盤。</p>
+                <h2 className="text-3xl font-black text-white mb-8">如何判斷莊家誘盤？</h2>
+                <p className="text-slate-400 leading-relaxed text-lg font-medium">觀察賽前 30 分鐘的水位跳動。若強隊水位持續高升 but 初盤水位卻極低，通常是莊家在誘導資金流向弱隊受讓盤。</p>
               </section>
               <section className="glass-card p-12 rounded-[40px] border border-white/10 shadow-2xl">
-                <h2 className="text-3xl font-black text-white mb-8 italic">走地滾球的絕殺心法</h2>
-                <p className="text-slate-400 leading-relaxed text-lg font-medium">下半場 70-85 分鐘是絕殺球出現的高峰期。建議在此時關注射門次數高但比分尚未拉開的場次進行補注。</p>
+                <h2 className="text-3xl font-black text-white mb-8">走地滾球的絕殺心法</h2>
+                <p className="text-slate-400 leading-relaxed text-lg font-medium">下半場是絕殺球出現的高峰期。建議在此時關注射門次數高但比分尚未拉開的場次進行補注。</p>
               </section>
             </div>
           </div>
@@ -221,14 +221,14 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
       case 'baccarat':
         return (
           <div className="space-y-16">
-            <h1 className="text-5xl md:text-7xl font-black gold-text mb-10 leading-tight text-center italic pr-4">百家樂攻略：<br/>五路解析與路單預測</h1>
+            <h1 className="text-5xl md:text-7xl font-black gold-text mb-10 leading-tight text-center pr-4">百家樂攻略：<br/>五路解析與路單預測</h1>
             <div className="grid md:grid-cols-2 gap-10">
               <section className="glass-card p-12 rounded-[40px] border border-white/10 shadow-2xl">
-                <h2 className="text-3xl font-black text-white mb-8 italic">下三路的真正價值</h2>
+                <h2 className="text-3xl font-black text-white mb-8">下三路的真正價值</h2>
                 <p className="text-slate-400 leading-relaxed text-lg font-medium">大路反映結果，而下三路（大眼仔、小路、曱甴路）則是看「對稱性」。當大路雜亂但下三路齊整紅點時，這就是職業博客口中的「旺路」。</p>
               </section>
               <section className="glass-card p-12 rounded-[40px] border border-white/10 shadow-2xl">
-                <h2 className="text-3xl font-black text-white mb-8 italic">資金纜法與停損點</h2>
+                <h2 className="text-3xl font-black text-white mb-8">資金纜法與停損點</h2>
                 <p className="text-slate-400 leading-relaxed text-lg font-medium">推薦「1-3-2-6」注碼法，穩定獲利。嚴禁採用無限制倍壓法（馬丁格爾），建立專屬盈虧紅線是獲利基石。</p>
               </section>
             </div>
@@ -237,9 +237,9 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
       case 'ares-strategy':
         return (
           <div className="space-y-16">
-            <h1 className="text-5xl md:text-7xl font-black gold-text mb-10 leading-tight text-center italic pr-4">戰神賽特攻略：<br/>眼神訊號與吐分週期</h1>
+            <h1 className="text-5xl md:text-7xl font-black gold-text mb-10 leading-tight text-center pr-4">戰神賽特攻略：<br/>眼神訊號與吐分週期</h1>
             <section className="glass-card p-14 rounded-[40px] border border-white/10 shadow-2xl">
-              <h2 className="text-3xl font-black text-white mb-10 italic text-center pr-4">掌握 51,000 倍的獲利密碼</h2>
+              <h2 className="text-3xl font-black text-white mb-10 text-center pr-4">掌握 51,000 倍的獲利密碼</h2>
               <div className="space-y-10 text-slate-400 text-lg font-medium">
                 <p><strong className="text-gold">1. 機台預熱測試：</strong> 先以小注 50 轉測試。若期間頻繁出現 2x-5x 乘號但不連線，代表能量累積中。</p>
                 <p><strong className="text-gold">2. 捕捉眼神紅光：</strong> 賽特眼神紅光頻率增加，且畫面掉落大型乘號次數提升時，代表進入吐分期。</p>
@@ -251,9 +251,9 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
       case 'thor-strategy':
         return (
           <div className="space-y-16">
-            <h1 className="text-5xl md:text-7xl font-black gold-text mb-10 leading-tight text-center italic pr-4">雷神索爾攻略：<br/>雷擊補償與倍率疊加</h1>
+            <h1 className="text-5xl md:text-7xl font-black gold-text mb-10 leading-tight text-center pr-4">雷神索爾攻略：<br/>雷擊補償與倍率疊加</h1>
             <section className="glass-card p-14 rounded-[40px] border border-white/10 shadow-2xl">
-              <h2 className="text-3xl font-black text-white mb-10 italic text-center pr-4">索爾敲地：電子爆分的黃金訊號</h2>
+              <h2 className="text-3xl font-black text-white mb-10 text-center pr-4">索爾敲地：電子爆分的黃金訊號</h2>
               <div className="space-y-10 text-slate-400 text-lg font-medium">
                 <p>雷神索爾的核心獲利點在於「連消倍率」。當畫面上方出現索爾敲擊地面的電光特效時，系統會轉化低分符號為高倍數乘號。掌握此週期進行加注，是電子高手一致公認的高效率打法。</p>
               </div>
@@ -263,7 +263,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
       default:
         return (
           <div className="text-center py-40">
-            <h1 className="text-6xl font-black gold-text mb-10 italic pr-4">內容整理中...</h1>
+            <h1 className="text-6xl font-black gold-text mb-10 pr-4">內容整理中...</h1>
             <button onClick={() => setPage('home')} className="bg-white/5 text-white font-bold px-12 py-5 rounded-3xl border border-white/10 hover:bg-white/10 transition-all">返回首頁</button>
           </div>
         );
@@ -278,7 +278,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
       <div className="mt-32 flex flex-col items-center">
         <div className="p-16 md:p-24 glass-card rounded-[80px] text-center w-full max-w-5xl border border-gold/30 shadow-[0_0_150px_rgba(212,175,55,0.2)] relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold to-transparent"></div>
-          <h3 className="text-4xl md:text-6xl font-black mb-10 gold-text italic pr-4">掌握品牌心法，立即開版獲利</h3>
+          <h3 className="text-4xl md:text-6xl font-black mb-10 gold-text pr-4">掌握品牌心法，立即開版獲利</h3>
           <p className="text-slate-400 mb-16 text-xl md:text-2xl font-medium leading-relaxed max-w-3xl mx-auto">
             BC博球提供全台最穩定的信用額度，專人 10 分鐘核版照會。免儲值、免繁瑣流程，讓您贏在獲利起跑點。
           </p>

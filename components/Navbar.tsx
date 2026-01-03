@@ -62,14 +62,11 @@ const Navbar: React.FC<NavbarProps> = ({ setPage, currentPage, onSectionNav }) =
     <nav className="fixed top-0 left-0 right-0 z-[100] bg-[#040712]/90 backdrop-blur-3xl border-b border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center cursor-pointer space-x-3 group" onClick={() => handleNav('home')}>
-            <div className="w-10 h-10 bg-gold rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-300">
-              <span className="text-black font-black text-xl italic">BC</span>
+          <div className="flex items-center space-x-3 cursor-pointer group" onClick={() => handleNav('home')}>
+            <div className="w-10 h-10 md:w-12 md:h-12 gold-gradient rounded-xl flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.3)] group-hover:scale-110 transition-transform">
+              <span className="text-black font-black text-xl md:text-2xl italic">BC</span>
             </div>
-            <div className="flex flex-col">
-              <span className="text-xl md:text-2xl font-black gold-text italic tracking-tighter leading-none">博球</span>
-              <span className="text-[10px] text-slate-400 font-bold tracking-[0.2em] mt-1 uppercase">娛樂城信用版</span>
-            </div>
+            <span className="text-2xl md:text-3xl font-black gold-text tracking-tighter">博球</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -129,12 +126,10 @@ const Navbar: React.FC<NavbarProps> = ({ setPage, currentPage, onSectionNav }) =
         <div className="md:hidden fixed inset-0 z-[140] bg-[#040712] w-screen h-[100dvh] flex flex-col overflow-hidden">
           <div className="flex justify-between items-center px-6 py-6 border-b border-white/5 bg-[#0a0f1e]">
              <div className="flex items-center space-x-3">
-                <div className="w-9 h-9 bg-gold rounded-lg flex items-center justify-center">
-                  <span className="text-black font-black text-lg italic">BC</span>
+                <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center">
+                  <span className="text-black font-black text-xs italic">BC</span>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-xl font-black gold-text italic leading-none">BC博球娛樂城導覽</span>
-                </div>
+                <span className="text-xl font-black gold-text">博球</span>
              </div>
           </div>
           <div className="flex-1 overflow-y-auto px-6 py-8 space-y-8">

@@ -30,7 +30,7 @@ const Process: React.FC = () => {
     { 
       title: '誠信對匯', 
       desc: '周一進行匯款。贏錢絕對速發，輸錢誠信對匯。BC博球十年口碑，實力見證。', 
-      icon: '💸',
+      icon: '💰',
       tag: 'Step 05'
     }
   ];
@@ -47,7 +47,7 @@ const Process: React.FC = () => {
           <div className="inline-block px-4 py-1 rounded-full bg-gold/10 border border-gold/20 mb-4">
             <span className="text-gold font-black tracking-widest text-[10px] uppercase">專業開版服務流程</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-black mb-6 italic pr-4">快速開版 <span className="gold-text">五大環節</span></h2>
+          <h2 className="text-4xl md:text-6xl font-black mb-6 pr-4">快速開版 <span className="gold-text">五大環節</span></h2>
           <p className="text-slate-500 max-w-xl mx-auto text-sm md:text-lg">我們簡化了繁瑣的行政流程，讓您的信用版體驗從開版到兌現都極度流暢。</p>
         </div>
 
@@ -79,7 +79,7 @@ const Process: React.FC = () => {
                 {/* 圓點與序號 */}
                 <div className="absolute left-8 md:left-1/2 -translate-x-1/2 top-10 flex items-center justify-center z-10">
                   <div className="w-12 h-12 rounded-full bg-[#0a0f1e] border-2 border-gold/50 flex items-center justify-center shadow-[0_0_20px_rgba(212,175,55,0.2)] group-hover:border-gold group-hover:scale-110 transition-all duration-300">
-                    <span className="text-gold font-black text-sm italic">{idx + 1}</span>
+                    <span className="text-gold font-black text-sm">{idx + 1}</span>
                   </div>
                   {/* 動態呼吸環 */}
                   <div className="absolute inset-0 w-12 h-12 rounded-full border border-gold opacity-0 group-hover:animate-ping"></div>

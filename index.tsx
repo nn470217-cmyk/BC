@@ -55,7 +55,7 @@ const App: React.FC = () => {
     >
       <div className={`absolute -top-10 -right-10 w-32 h-32 bg-${color}-500/10 rounded-full blur-2xl group-hover:bg-${color}-500/20 transition-all`}></div>
       <div className="text-6xl mb-6 transform group-hover:scale-110 transition-transform duration-500">{icon}</div>
-      <h3 className="text-2xl font-black text-white mb-3 group-hover:text-gold transition-colors italic leading-none">{title}</h3>
+      <h3 className="text-2xl font-black text-white mb-3 group-hover:text-gold transition-colors leading-none">{title}</h3>
       <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">{desc}</p>
       <div className="text-[10px] font-black tracking-widest text-gold opacity-60 group-hover:opacity-100 uppercase border-b border-gold/20 pb-1 w-fit">查看介紹 ➔</div>
     </div>
@@ -88,7 +88,7 @@ const App: React.FC = () => {
             {/* 遊戲品牌介紹專區 */}
             <section id="game-intro-section" className="py-24 max-w-7xl mx-auto px-4 relative border-b border-white/5">
               <div className="text-center mb-16 px-4">
-                <h2 className="text-5xl md:text-7xl font-black mb-8 italic pr-4"><span className="gold-text">遊戲介紹專區</span></h2>
+                <h2 className="text-5xl md:text-7xl font-black mb-8 pr-4"><span className="gold-text">遊戲介紹專區</span></h2>
                 <p className="text-slate-400 max-w-4xl mx-auto text-lg md:text-xl leading-relaxed font-medium">
                   BC博球介接全球頂尖系統供應商。從業界標竿協和體育、ATG電子、到穩定首選DG真人。我們為您呈現最具公信力與公平性的品牌深度解析。
                 </p>
@@ -106,7 +106,7 @@ const App: React.FC = () => {
             {/* 攻略專區 */}
             <section id="strategy-section" className="py-24 max-w-7xl mx-auto px-4 relative">
               <div className="text-center mb-16 px-4">
-                <h2 className="text-5xl md:text-7xl font-black mb-8 italic pr-4"><span className="gold-text">攻略與實戰教學</span></h2>
+                <h2 className="text-5xl md:text-7xl font-black mb-8 pr-4"><span className="gold-text">攻略與實戰教學</span></h2>
                 <p className="text-slate-400 max-w-4xl mx-auto text-lg md:text-xl leading-relaxed font-medium">
                   BC博球職業團隊親撰。拒絕盲目博弈，透過盤口分析、路單規律與吐分週期判斷，系統化提升您的獲利勝率。
                 </p>
