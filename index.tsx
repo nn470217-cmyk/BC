@@ -42,11 +42,11 @@ const App: React.FC = () => {
   const StrategyCard = ({ title, desc, icon, type, color }: { title: string, desc: string, icon: string, type: PageType, color: string }) => (
     <div 
       onClick={() => handlePageChange(type)}
-      className="glass-card group relative p-8 rounded-[40px] border border-white/5 hover:border-gold/40 transition-all duration-500 cursor-pointer overflow-hidden shadow-2xl"
+      className="glass-card group relative p-8 rounded-[2.5rem] border border-white/5 hover:border-gold/40 transition-all duration-500 cursor-pointer overflow-hidden shadow-2xl active:scale-95"
     >
       <div className={`absolute -top-12 -right-12 w-40 h-40 bg-${color}-500/10 rounded-full blur-3xl group-hover:bg-${color}-500/20 transition-all`}></div>
       <div className="text-7xl mb-6 transform group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500">{icon}</div>
-      <h3 className="text-2xl font-black gold-text mb-4">{title}</h3>
+      <h3 className="text-2xl font-black gold-text mb-4 italic">{title}</h3>
       <p className="text-slate-400 text-sm leading-relaxed mb-8">{desc}</p>
       <div className="inline-flex items-center text-xs font-black tracking-widest text-gold border-b border-gold/30 pb-1 group-hover:border-gold transition-all">
         點擊進入深度教學 ➜
@@ -63,38 +63,41 @@ const App: React.FC = () => {
           <>
             <Hero onComparisonClick={() => scrollToSection('comparison')} />
             
-            <section className="py-24 max-w-7xl mx-auto px-4">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-6xl font-black mb-6">全台首選 <span className="gold-text">娛樂城推薦品牌</span></h2>
-                <p className="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
-                  BC博球不僅是專業的娛樂城信用版平台，更是玩家公認的技術首選。我們匯集了2026年最新娛樂城趨勢，提供百家樂路單解析、運彩賽事即時分析及多款電子遊戲技巧。
+            <section className="py-24 max-w-7xl mx-auto px-4 relative">
+               {/* 裝飾光暈 */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 blur-[100px] pointer-events-none"></div>
+              
+              <div className="text-center mb-16 px-4">
+                <h2 className="text-4xl md:text-6xl font-black mb-6 italic">全台首選 <span className="gold-text">博弈優質品牌</span></h2>
+                <p className="text-slate-400 max-w-3xl mx-auto text-sm md:text-lg leading-relaxed font-medium">
+                  BC博球不僅提供專業的信用版開版服務，更是玩家的實戰教練。我們匯集2026最新攻略，帶您深度解析機台規律與走地心法。
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <StrategyCard 
                   title="百家樂必勝攻略" 
-                  desc="全台娛樂城首創五路分析，深度解析百家樂看路技巧，大幅提升贏錢勝率，信用版開版玩家必看。"
+                  desc="全台首創五路分析，深度解析看路技巧與資金管理。信用版玩家必學的高勝率打法。"
                   icon="🃏" 
                   type="baccarat"
                   color="blue"
                 />
                 <StrategyCard 
                   title="體育運彩分析" 
-                  desc="掌握美金盤口、走地滾球技巧。專業運彩玩家推薦，BC博球信用版提供最穩定的賽事投注環境。"
+                  desc="掌握美金盤口、走地滾球技巧。BC博球信用版提供最穩定、最高額度的賽事投注環境。"
                   icon="⚽" 
                   type="sports"
                   color="green"
                 />
                 <StrategyCard 
                   title="戰神賽特爆分" 
-                  desc="電子遊戲攻略：解析戰神賽特機台週期。2026年熱門電子遊戲推薦，帶領您領取大額彩金。"
+                  desc="2026 熱門電子機台攻略。解析賽特爆分週期與眼神訊號，掌握信用版上分關鍵。"
                   icon="🏺" 
                   type="ares-strategy"
                   color="yellow"
                 />
                 <StrategyCard 
                   title="雷神索爾技巧" 
-                  desc="雷神索爾爆分攻略，教您捕捉雷擊訊號與倍率疊加，全台娛樂城推薦首選的高勝率打法。"
+                  desc="雷神索爾爆分攻略，教您捕捉雷擊補償訊號。領先全台的高勝率電子遊戲打法。"
                   icon="⚡" 
                   type="thor-strategy"
                   color="blue"
@@ -106,25 +109,25 @@ const App: React.FC = () => {
             <Comparison />
             <Process />
 
-            {/* SEO 強化內容區塊：增加關鍵字密度與語義鏈接 */}
-            <section className="py-20 max-w-7xl mx-auto px-4 border-t border-white/5 opacity-80">
+            {/* SEO 強化內容區塊 */}
+            <section className="py-24 max-w-7xl mx-auto px-4 border-t border-white/5 bg-gradient-to-b from-transparent to-[#0a0f1e]/20">
               <div className="prose prose-invert max-w-none">
-                <h2 className="text-2xl font-bold gold-text mb-6">為什麼 BC博球 是 2026 台灣娛樂城推薦的首選信用版？</h2>
-                <div className="grid md:grid-cols-2 gap-10 text-slate-400 text-sm leading-relaxed">
-                  <div>
+                <h2 className="text-3xl font-black gold-text mb-8 text-center italic">為什麼專業玩家一致推薦 BC博球 信用版？</h2>
+                <div className="grid md:grid-cols-2 gap-12 text-slate-400 text-sm md:text-base leading-relaxed font-medium">
+                  <div className="glass-card p-8 rounded-[2rem] border border-white/5">
                     <p className="mb-4">
-                      在台灣博弈市場中，選擇一家值得信賴的<strong>娛樂城推薦</strong>品牌至關重要。BC博球作為資深<strong>信用版</strong>領導者，深知玩家對安全與效率的需求。不同於傳統現金版需要頻繁儲值，我們的額度制模式讓您能更彈性地分配資金，免去了儲值延遲的煩惱。
+                      在 2026 年的<strong>台灣娛樂城</strong>市場，安全性與隱私是玩家最在乎的事。BC博球作為資深<strong>信用版</strong>品牌，我們捨棄了現金版繁雜的儲值提款流程，改採「先審核額度、周日結算、周一對匯」的模式。
                     </p>
                     <p>
-                      我們的平台涵蓋了多樣化的遊戲選擇，包括真人百家樂、體育賽事、電子遊戲等。每一款遊戲我們都配備了詳盡的攻略教學，這也是為什麼 BC博球 能在眾多<strong>娛樂城推薦</strong>名單中脫穎而出的關鍵原因。
+                      這種模式不僅免去了儲值延遲的風險，更能讓玩家在賽事高峰期（如 NBA、足球歐冠）靈活運用信用額度，實現真正的博弈自由。
                     </p>
                   </div>
-                  <div>
+                  <div className="glass-card p-8 rounded-[2rem] border border-white/5">
                     <p className="mb-4">
-                      對於尋找穩定<strong>信用版娛樂城</strong>的玩家來說，結算誠信是核心指標。BC博球堅持每周日固定結算，周一準時對匯，這種穩定性讓我們在業界建立了長達10年的良好口碑。無論您是追求高倍率的戰神賽特，還是喜歡盤口多變的運彩分析，這裡都能滿足您的需求。
+                      誠信是 BC博球 立足十年的基石。我們的<strong>娛樂城推薦</strong>名聲來自於每一筆準時到帳的對匯，以及對玩家資料的軍規級保護。
                     </p>
                     <p>
-                      立即聯繫客服進行<strong>開版</strong>照會，開啟您的尊榮娛樂之旅。我們承諾10分鐘內快速審核，免預付、免壓證，真正實現誠信對匯。
+                      無論您是追求百家樂的路單精準，還是熱衷於戰神賽特的倍率堆疊，在 BC博球 都能找到最公平的環境。立即諮詢專員，獲取您的專屬遊玩額度。
                     </p>
                   </div>
                 </div>
@@ -138,9 +141,10 @@ const App: React.FC = () => {
 
       <Footer setPage={handlePageChange} />
       
+      {/* 行動版底部懸浮按鈕 - 優化質感 */}
       <div className="md:hidden fixed bottom-6 left-4 right-4 z-50">
-        <a href="https://lin.ee/QmHsUTj" className="flex items-center justify-center gold-gradient text-black font-black py-5 rounded-2xl shadow-[0_15px_40px_rgba(212,175,55,0.4)] animate-bounce-slow text-lg">
-           💬 立即開版 (10分鐘快速照會)
+        <a href="https://lin.ee/QmHsUTj" className="flex items-center justify-center gold-gradient text-black font-black py-5 rounded-[2rem] shadow-[0_20px_60px_rgba(212,175,55,0.4)] animate-bounce-slow text-xl active:scale-90 transition-transform">
+           💬 立即開版 (專人10分鐘照會)
         </a>
       </div>
     </div>
