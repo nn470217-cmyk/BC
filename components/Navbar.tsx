@@ -66,7 +66,7 @@ const Navbar: React.FC<NavbarProps> = ({ setPage, currentPage, onSectionNav }) =
             <div className="w-10 h-10 md:w-12 md:h-12 gold-gradient rounded-xl flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.3)] group-hover:scale-110 transition-transform">
               <span className="text-black font-black text-xl md:text-2xl italic">BC</span>
             </div>
-            <span className="text-2xl md:text-3xl font-black gold-text tracking-tighter">博球</span>
+            <span className="text-2xl md:text-3xl font-black gold-text tracking-tighter">博球娛樂城</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -129,7 +129,7 @@ const Navbar: React.FC<NavbarProps> = ({ setPage, currentPage, onSectionNav }) =
                 <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center">
                   <span className="text-black font-black text-xs italic">BC</span>
                 </div>
-                <span className="text-xl font-black gold-text">博球</span>
+                <span className="text-xl font-black gold-text">博球娛樂城</span>
              </div>
           </div>
           <div className="flex-1 overflow-y-auto px-6 py-8 space-y-8">
