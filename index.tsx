@@ -18,23 +18,9 @@ const App: React.FC = () => {
     window.scrollTo(0, 0);
   }, [currentPage]);
 
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const page = params.get('page') as PageType;
-    const validPages: PageType[] = [
-      'home', 'baccarat', 'slots', 'ares-strategy', 'thor-strategy', 'sports', 
-      'game-intro', 'intro-sports', 'intro-slots', 'intro-live', 'intro-lottery', 
-      'intro-chess', 'intro-fishing', 'seo-article'
-    ];
-    if (page && validPages.includes(page)) {
-      setCurrentPage(page);
-    }
-  }, []);
-
   const handlePageChange = (page: PageType) => {
     setCurrentPage(page);
-    const newUrl = page === 'home' ? window.location.pathname : `?page=${page}`;
-    window.history.pushState({ page }, '', newUrl);
+    // 移除 window.history.pushState 以避免在沙盒環境中發生 SecurityError
   };
 
   const scrollToSection = (id: string) => {
@@ -97,8 +83,8 @@ const App: React.FC = () => {
                 <IntroCard title="體育品牌" icon="🏆" type="intro-sports" color="green" desc="深入了解協和體育盤口深度、美金盤同步與走地水位優勢。" />
                 <IntroCard title="電子品牌" icon="🎰" type="intro-slots" color="blue" desc="揭秘 ATG、RSG、QT、GR、ZG 等主流館別，解析高 RTP 返還率與爆分機台特色。" />
                 <IntroCard title="真人品牌" icon="💎" type="intro-live" color="yellow" desc="探索 DG、歐博、MT、WM、沙龍、金佰新等全球頂級場館，體驗真人荷官視訊博弈魅力。" />
-                <IntroCard title="彩票品牌" icon="🧧" type="intro-lottery" color="red" desc="詳解常博與大力彩票高頻快開玩法，數據同步官方，誠信派彩保證。" />
-                <IntroCard title="棋牌品牌" icon="♟️" type="intro-chess" color="purple" desc="百勝棋牌真人智力對戰，提供鬥地主、德州撲克等多樣化經典項目。" />
+                <IntroCard title="體育攻略" icon="⚽" type="sports" color="red" desc="分析賽事賠率與走勢，掌握投注最佳時機。" />
+                <IntroCard title="百家樂攻略" icon="🃏" type="baccarat" color="purple" desc="百家樂大路解析，提高勝率的關鍵技巧。" />
                 <IntroCard title="捕魚品牌" icon="🐟" type="intro-fishing" color="cyan" desc="匯集 RGS、ZG、GR、GB、YZ、博球等多樣化捕魚機 brand，享受極速爆金與震撼特效。" />
               </div>
             </section>

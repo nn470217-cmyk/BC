@@ -37,7 +37,7 @@ const Hero: React.FC<HeroProps> = ({ onComparisonClick }) => {
         
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6 px-4">
           <a href={lineUrl} className="w-full sm:w-auto gold-gradient text-black font-black text-xl md:text-2xl px-12 py-6 md:px-20 md:py-7 rounded-[2rem] shadow-[0_20px_50px_rgba(212,175,55,0.4)] hover:scale-105 active:scale-95 transition-all duration-300">
-            10分鐘快速核額遊玩
+            10分鐘快速審核遊玩
           </a>
           <button onClick={onComparisonClick} className="w-full sm:w-auto bg-white/5 backdrop-blur-3xl hover:bg-white/10 text-white font-black text-xl md:text-2xl px-12 py-6 md:px-20 md:py-7 rounded-[2rem] border border-white/10 transition-all shadow-xl">
             信用版優勢分析
@@ -46,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({ onComparisonClick }) => {
         
         <div className="mt-16 md:mt-28 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-6xl mx-auto px-4">
           {[
-            { label: '核版速度', val: '10 分鐘', icon: '⚡' },
+            { label: '核版速度', val: '10 分鐘開版', icon: '⚡' },
             { label: '結算週期', val: '每周日12:00結算', icon: '📅' },
             { label: '累積信譽', val: '10 年口碑', icon: '🏆' },
             { label: '隱私保護', val: '軍規加密', icon: '🔐' },
