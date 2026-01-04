@@ -64,31 +64,31 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
             </div>
             <BrandItem 
               name="1. ATG 電子"
-              imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+              imageUrl="https://i.meee.com.tw/hnF9FIw.jpg"
               features={['戰神賽特', '51000倍', '隨處支付']}
               content={`ATG 電子憑藉其年度代表作《戰神賽特》成為目前娛樂城信用版中最熱門品牌。其核心機制採用「隨處支付」消除模式，突破傳統賠付線限制，大幅增加爆獎機率。`}
             />
             <BrandItem 
               name="2. RSG 電子"
-              imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+              imageUrl="https://i.meee.com.tw/wXtSrJy.jpg"
               features={['雷神索爾', '麻將發了', '穩定返還']}
               content={`RSG 電子以《雷神索爾》與《麻將發了》聞名。其數值設計嚴謹，提供極其穩定的 RTP 返還率。雷神索爾的雷擊補償機制是玩家公認的電子機台首選。`}
             />
             <BrandItem 
               name="3. QT 電子"
-              imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+              imageUrl="https://i.meee.com.tw/wXtSrJy.jpg"
               features={['亞系風格', '多樣機台', '極速載入']}
               content={`QT 電子（QTech Games）專注於亞洲市場偏好，其介面設計直覺流暢。提供超過百款不同主題的拉霸遊戲，特別是在小注博大獎的數值平衡上表現優異。`}
             />
             <BrandItem 
               name="4. GR 電子"
-              imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+              imageUrl="https://i.meee.com.tw/wXtSrJy.jpg"
               features={['好路電子', '老虎機專家', '公平性保證']}
               content={`GR 電子以其公平透明的 RNG 隨機運算聞名，提供多樣化具有故故事節的機台，讓玩家在博弈的同時也能享受豐富的視覺敘事。`}
             />
             <BrandItem 
               name="5. ZG 電子"
-              imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+              imageUrl="https://i.meee.com.tw/wXtSrJy.jpg"
               features={['Ze-Gaming', '創新玩法', '高動態特效']}
               content={`ZG 電子（ZebraGaming）是新一代電子遊戲的領航品牌。其特色在於將傳統老虎機與現代動作遊戲特效結合，每一轉都充滿震撼感。`}
             />
