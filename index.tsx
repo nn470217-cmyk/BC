@@ -98,10 +98,10 @@ const App: React.FC = () => {
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <StrategyCard title="百家樂必勝攻略" type="baccarat" desc="五路分析看路技巧，資金纜法管理，建立長久獲利模型。" imageUrl="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?auto=format&fit=crop&q=80&w=600" />
-                <StrategyCard title="體育運彩分析" type="sports" desc="透視美金盤口誘盤訊號，走地滾球補注時機與數據解讀。" imageUrl="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=600" />
-                <StrategyCard title="戰神賽特爆分" type="ares-strategy" desc="解析眼神訊號與吐分週期，掌握 51000 倍噴金大獎瞬間。" imageUrl="https://images.unsplash.com/photo-1599110906885-b02449931754?auto=format&fit=crop&q=80&w=600" />
-                <StrategyCard title="雷神索爾技巧" type="thor-strategy" desc="捕捉雷擊補償機制，倍率疊加連消心法，掌握電子爆分規律。" imageUrl="https://images.unsplash.com/photo-1534237710431-e2fc698436d0?auto=format&fit=crop&q=80&w=600" />
+                <StrategyCard title="百家樂必勝攻略" type="baccarat" desc="五路分析看路技巧，資金纜法管理，建立長久獲利模型。" imageUrl="https://i.meee.com.tw/OC1uj3N.jpg" />
+                <StrategyCard title="體育運彩分析" type="sports" desc="透視美金盤口誘盤訊號，走地滾球補注時機與數據解讀。" imageUrl="https://i.meee.com.tw/fGDVdub.jpg" />
+                <StrategyCard title="戰神賽特爆分" type="ares-strategy" desc="解析眼神訊號與吐分週期，掌握 51000 倍噴金大獎瞬間。" imageUrl="https://i.meee.com.tw/hnF9FIw.jpg" />
+                <StrategyCard title="雷神索爾技巧" type="thor-strategy" desc="捕捉雷擊補償機制，倍率疊加連消心法，掌握電子爆分規律。" imageUrl="https://i.meee.com.tw/8HSVe8d.jpg" />
               </div>
             </section>
 
