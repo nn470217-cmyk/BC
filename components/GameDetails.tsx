@@ -196,13 +196,13 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
               />
               <BrandItem 
                 name=" GR 捕魚"
-                imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+                imageUrl="https://i.meee.com.tw/jbMDlJh.jpg"
                 features={['3D特效', '震撼回饋', '海底探險']}
                 content={`華麗的 3D 海底特效，每一發子彈都有震撼的視覺回饋。`}
               />
               <BrandItem 
                 name=" GB 捕魚"
-                imageUrl="https://i.meee.com.tw/jbMDlJh.jpg"
+                imageUrl="https://i.meee.com.tw/4Qvasec.jpg"
                 features={['技術射擊', '獎勵關卡', '爆金平衡']}
                 content={`強調技術性射擊與獎勵關卡，爆金機率平衡且具挑戰性。`}
               />
