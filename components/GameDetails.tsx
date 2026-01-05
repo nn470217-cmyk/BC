@@ -132,7 +132,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
             />
             <BrandItem 
               name=" 金佰新真人黑粒仔"
-              imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+              imageUrl="https://i.meee.com.tw/BAxL8gv.jpg"
               features={['傳統特色', '天九牌', '真人對戰']}
               content={`金佰新真人專攻極具文化特色的「黑粒仔（天九牌）」。在真人視訊中重現傳統博弈魅力，是市面上少數能體驗到地道黑粒仔玩法的頂尖場館。`}
             />
@@ -147,13 +147,13 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
             </div>
             <BrandItem 
               name=" 常博彩票"
-              imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+              imageUrl="https://i.meee.com.tw/0zKGTs6.jpg"
               features={['官方數據', '自動派彩', '玩法齊全']}
               content={`常博彩票涵蓋國內外主流官方彩票項目。保證數據即時同步，開獎後 5 分鐘內完成派彩，結算透明且信譽卓著。`}
             />
             <BrandItem 
-              name=" 大力彩票"
-              imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+              name=" 大立彩票"
+              imageUrl="https://i.meee.com.tw/GzUOG1j.jpg"
               features={['高頻開獎', '極速結算', '數據分析']}
               content={`大立彩票專攻 飆速賽車、幸運飛艇 等高頻開獎遊戲。提供詳盡的走勢圖表，方便玩家進行殺號與倍投計畫。`}
             />
@@ -184,13 +184,13 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
             <div className="space-y-4">
               <BrandItem 
                 name=" RGS 捕魚"
-                imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+                imageUrl="https://i.meee.com.tw/gjb9hcB.jpg"
                 features={['頂級之作', '高倍率BOSS', '武器升級']}
                 content={`RSG電子旗下頂級之作，高倍率 BOSS 出現頻率高，武器升級感強。`}
               />
               <BrandItem 
                 name=" ZG 捕魚"
-                imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+                imageUrl="https://i.meee.com.tw/KaZMWJ8.jpg"
                 features={['BOSS鎖定', '自動連射', '高效捕魚']}
                 content={`以獨特的 BOSS 鎖定與自動連射功能聞名，適合追求效率的玩家。`}
               />
@@ -202,19 +202,19 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
               />
               <BrandItem 
                 name=" GB 捕魚"
-                imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+                imageUrl="https://i.meee.com.tw/jbMDlJh.jpg"
                 features={['技術射擊', '獎勵關卡', '爆金平衡']}
                 content={`強調技術性射擊與獎勵關卡，爆金機率平衡且具挑戰性。`}
               />
               <BrandItem 
                 name=" YZ 捕魚"
-                imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+                imageUrl="https://i.meee.com.tw/Zh3SFlN.jpg"
                 features={['稀有魚種', '高額倍率', '大獎挑戰']}
                 content={`擁有極高倍率的稀有魚種，適合喜歡搏大獎的高額玩家。`}
               />
               <BrandItem 
                 name=" 博球捕魚"
-                imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+                imageUrl="https://i.meee.com.tw/WqPXmpR.jpg"
                 features={['專屬特約', '爽快感十足', '回報率領先']}
                 content={`BC博球專屬特約場館，調優了爆金週期，爽快感與回報率全台首屈一指。`}
               />
