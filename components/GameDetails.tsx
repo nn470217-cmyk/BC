@@ -48,7 +48,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
             </div>
             <BrandItem 
               name=" 協和體育"
-              imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+              imageUrl="https://i.meee.com.tw/fGDVdub.jpg"
               features={['高勝率水位', '即時走地', '美金盤同步']}
               content={`協和體育是亞洲體育博彩市場的領航者，以盤口深度與極速結算功能聞名業界。提供足球五大聯賽、NBA、MLB以及中華職棒 (CPBL) 等賽事。優勢在於美金盤無延遲同步，確保水位精準。`}
             />
@@ -126,7 +126,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
             />
             <BrandItem 
               name=" 沙龍真人"
-              imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+              imageUrl="https://i.meee.com.tw/c7SvaQO.jpg"
               features={['SA Gaming', '大獎保證', '公正牌照']}
               content={`沙龍真人（SA Gaming）是博弈界的長青品牌，持有 PAGCOR 等國際授權。其百家樂路單統計功能極其詳盡，適合進行數據化分析投注。`}
             />
@@ -168,7 +168,7 @@ const GameDetails: React.FC<GameDetailsProps> = ({ type, setPage }) => {
             </div>
             <BrandItem 
               name=" 百勝棋牌"
-              imageUrl="https://i.ibb.co/s9Rh04td/1.jpg"
+              imageUrl="https://i.meee.com.tw/OfUPWAc.jpg"
               features={['真人對戰', '鬥地主', '防作弊機制']}
               content={`百勝棋牌提供鬥地主、德州撲克、炸金花等經典項目。內置強大的防作弊機制，確保每一場對局皆為真實玩家間的公平實力對戰。`}
             />
